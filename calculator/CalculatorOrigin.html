@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS&JS/test2.css">
+    <link rel="shortcut icon" href="../calculator/PhotoCalc/IconCalculator.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/site.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/container.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/header.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/image.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/button.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/list.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/components/transition.css">
+    <script src="../semantic/Semantic-UI-master/examples/assets/library/jquery.min.js"></script>
+    <script src="../semantic/semantic.js"></script>
+
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <style type="text/css">
+
+
+    </style>
+    <script>
+        $(document)
+                .ready(function() {
+                    $('.ui.selection.dropdown').dropdown();
+                    $('.ui.menu .ui.dropdown').dropdown({
+                        on: 'hover'
+                    });
+                })
+        ;
+    </script>
+</head>
+
+<body>
+<div class="ui menu">
+
+    <div class="header item">H&T</div> <!-- Над названием надо еще подумать --> <!-- Html&Timur так себе название--> <!-- Homepage&Timur боле менее нормально звучит -->
+
+    <div class="ui dropdown item">
+        My Projects
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <div>
+                <a href="../Login&Password/LoginOrigin.html" class="item">Login&Password </a>
+            </div>
+
+            <div class="divider"></div>
+            <div>
+                <a href="../calculator/CalculatorOrigin.html" class="item">Calculator</a>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <a class="item">Menu</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui dropdown item">
+        My Lose Projects
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <div>
+                <a href="../Login&Password/login(1).html" class="item">Login&Password(1) </a>
+            </div>
+            <div>
+                <a href="../Login&Password/login(2).html" class="item">Login&Password(2)</a>
+            </div>
+            <div>
+                <a href="../Login&Password/login(3).html" class="item">Login&Password(3)</a>
+            </div>
+            <div>
+                <a href="../Login&Password/login(4).html" class="item">Login&Password(4) </a>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <a href="../calculator/calculator(1).html" class="item">Calculator(1) </a>
+            </div>
+            <div>
+                <a href="../calculator/calculator(2).html" class="item">Calculator(2) </a>
+            </div>
+            <div>
+                <a href="../calculator/calculator(3).html" class="item">Calculator(3) </a>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <a href="../Menu/menu(1).html" class="item">Menu(1) </a>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <a href="../Test/test(1).html" class="item">Test(1) </a>
+            </div>
+            <div>
+                <a href="../Test/test(2).html" class="item">Test(2) </a>
+            </div>
+            <div>
+                <a href="../Test/test(3).html" class="item">Test(3) </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="right menu">
+        <a href="https://www.google.com/" class="item">Help</a> <!-- Это как бы шутка, скорее всего плохая ;(-->
+    </div>
+</div>
+<!-- <h3 class="ui block header">Calculator  </h3> -->
+
+<!--логин и пароль-->
+<div class="ui attached message">
+    <div class="header">
+        Welcome to my site!
+    </div>
+    <p>This is Calculator</p>
+   </div>
+<!--логин и пароль-->
+   <div class="ui attached message">
+        <div class="ui blurring segment">
+            <div class="ui inverted dimmer"></div>
+
+
+    <form name="calc" id="calculator">
+
+        <table>
+            <tr>
+                <td>
+                    <div type="display" class="ui input">
+                        <input name="input" type="text" placeholder="This is display">
+                    </div>
+
+                </td>
+            </tr>
+
+               <td>
+
+               <!--     <input type="button" name="seven" value="7" OnClick="calc.input.value += '7'">
+                    <input type="button" name="eight" value="8" OnClick="calc.input.value += '8'">
+                    <input type="button" name="nine" value="9" OnClick="calc.input.value += '9'">
+                    <input type="button" name="clear" value="C" OnClick="calc.input.value = ''">
+                    <input type="button" name="doit" value="=" OnClick="calc.input.value = eval(calc.input.value)">
+
+
+
+                    <br>
+                    <input type="button" name="four" value="4" OnClick="calc.input.value += '4'">
+                    <input type="button" name="five" value="5" OnClick="calc.input.value += '5'">
+                    <input type="button" name="six" value="6" OnClick="calc.input.value += '6'">
+                    <input type="button" name="sub" value="+" OnClick="calc.input.value += '+'">
+
+                    <br>
+                    <input type="button" name="one" value="1" OnClick="calc.input.value += '1'">
+                    <input type="button" name="two" value="2" OnClick="calc.input.value += '2'">
+                    <input type="button" name="three" value="3" OnClick="calc.input.value += '3'">
+                    <input type="button" name="min" value="-" OnClick="calc.input.value += '-'">
+
+
+                    <br>
+                    <input type="button" name="zero" value="0" OnClick="calc.input.value += '0'">
+                    <input type="button" name="point" value="." OnClick="calc.input.value += '.'">
+                    <input type="button" name="div"  value="/" OnClick="calc.input.value += '/'">
+                    <input type="button" name="mul" value="x" OnClick="calc.input.value += '*'">
+-->
+                   <div class="five ui buttons">
+
+                       <input class="ui button"  name="seven" value="7" onclick="calc.input.value += '7'" >
+                       <input class="ui button"  name="eight" value="8" onclick="calc.input.value += '8'" >
+                       <input class="ui button"  name="nine" value="9" onclick="calc.input.value += '9'" >
+                       <input class="ui button"  name="clear" value="C" onclick="calc.input.value = ''" >
+                       <input class="ui button"  name="doit" value="=" onclick="calc.input.value = eval(calc.input.value)" >
+
+                    </div>
+
+                    <br>
+                    <div class="five ui buttons">
+                        <input class="ui button"  name="four" value="4" onclick="calc.input.value += '4'" >
+                        <input class="ui button"  name="five" value="5" onclick="calc.input.value += '5'" >
+                        <input class="ui button"  name="sex" value="6" onclick="calc.input.value += '6'" >
+                        <input class="ui button"  name="sub" value="+" onclick="calc.input.value += '+'" >
+                        <input class="ui button"  name="backspace" value="&#9224;" onclick="calc.input.value -= ''" >
+                    </div>
+                   <br>
+                   <div class="five ui buttons">
+                       <input class="ui button"  name="one" value="1" onclick="calc.input.value += '1'" >
+                       <input class="ui button"  name="two" value="2" onclick="calc.input.value += '2'" >
+                       <input class="ui button"  name="trhee" value="3" onclick="calc.input.value += '3'" >
+                       <input class="ui button"  name="min" value="-" onclick="calc.input.value += '-'" >
+                       <input class="ui button"  name="" value="(" onclick="calc.input.value += '('" >
+
+                   </div>
+                    <br>
+                    <div class="five ui buttons">
+                        <input class="ui button"  name="zero" value="0" onclick="calc.input.value += '0'" >
+                        <input class="ui button"  name="point" value="." onclick="calc.input.value += '.'" >
+                        <input class="ui button"  name="div" value="/" onclick="calc.input.value += '/'" >
+                        <input class="ui button"  name="mul" value="x" onclick="calc.input.value += '*'" >
+                        <input class="ui button"  name="" value=")" onclick="calc.input.value += ')'" >
+                    </div>
+
+
+                   <!-- <br>
+                    <div class="five ui buttons">
+
+                    <button class="ui button">8</button>
+                    <button class="ui button">9</button>
+                    <button class="ui button">C</button>
+                    <button class="ui button">=</button>
+                        <input class="ui button" type="button" name="seven" value="7" onclick="calc.input.value += '7'" >
+                        </div> -->
+             <!--  <div class="ui buttons">
+                   <input class="ui button" type="button" name="seven" value="7" onclick="calc.input.value += '7'" >
+                     </div> -->
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</div>
+</div>
+<div class="ui attached message">
+    <div class="header">
+        Create by Timur
+    </div>
+    </div>
+
+
+</body>
+</html>

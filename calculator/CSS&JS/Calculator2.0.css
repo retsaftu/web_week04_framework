@@ -1,0 +1,12 @@
+#calculator * {font-size: 25px ;}
+#calculator table {border: solid 7px dimgrey; border-spacing: 5px; background-image: url(carbon.jpg); }
+#calculator table td {border-spacing: 5px;}
+h1 {
+    font-family: 'Monoton', cursive;
+}
+[type="button"] {
+    background-color: silver;width: 80px; height: 60px;
+}
+input.display {
+    background-color: #ffffff; width: 335px; text-align: right;
+}

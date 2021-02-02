@@ -1,0 +1,22 @@
+#calculator * {font-size: 44px ;}
+/*#calculator table {border: solid 7px dimgrey; border-spacing: 5px; background-image: url(../untitled/carbon.jpg); } */
+#calculator table td {border-spacing: 5px;}
+/*h1{
+    font-family: 'Monoton', cursive;
+} */
+p    {
+    font-family: "Helvetica Neue" , cursive;
+}
+
+[type="button"] {
+    background-color: black; width: 52px; height: 130px;
+}
+[type="display"] {
+    width: 1827px; height: 130px;
+}
+
+/* input.display {
+    background-color: #ffffff; width: 600px; text-align: right;
+} */
+
+/* ssdsd */
